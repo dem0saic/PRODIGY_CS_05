@@ -40,6 +40,14 @@ LinkedIn: https://www.linkedin.com/in/owusuvincent/
 creator_colored = colored(creator_info, color="white")
 print(creator_colored)
 
+# Print the description of the program
+description = """
+This program is a simple network packet analyzer that captures TCP packets on a specified network interface.
+It extracts the source and destination IP addresses, source and destination ports, and raw data from each packet.
+The packet information is displayed on the console and written to a log file.
+"""
+description_colored = colored(description, color="green")
+print(description_colored)
 
 # Function to handle each packet
 def handle_packet(packet, log):
@@ -93,7 +101,7 @@ def main(interface, verbose=False):
 if __name__ == "__main__":
     # Check if the correct number of arguments is provided
     if len(sys.argv) < 2 or len(sys.argv) > 3:
-        print("Usage: python sniffer.py <interface> [verbose]")
+        print("Usage: python Network-Packet-Analyzer.py <interface> [verbose]")
         sys.exit(1)
     # Determine if verbose mode is enabled
     verbose = False
