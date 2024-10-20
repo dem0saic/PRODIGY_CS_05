@@ -29,7 +29,7 @@ Install Npcap (Windows only): Download and install Npcap from Npcap Official Web
 # Usage
 To run the packet analyzer, use the following command in your terminal or command prompt:
 `
-```python Network-Packet-Analyzer.py <interface> [verbose]``
+python Network-Packet-Analyzer.py <interface> [verbose]
 Replace <interface> with the name of the network interface you want to sniff on (e.g., Wi-Fi, Ethernet).
 The optional verbose parameter can be added to display more detailed output.
 
